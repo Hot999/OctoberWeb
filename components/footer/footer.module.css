@@ -1,0 +1,14 @@
+.link {
+    color: #333333;
+}
+.link:hover {
+    color: #00A4F7;
+}
+.footer_wrapper {
+    padding-top: 50px;
+    /*padding-bottom: 50px;*/
+}
+.hr_bb {
+    padding-top: 50px;
+    border-bottom: 2px solid #128ACE;
+}

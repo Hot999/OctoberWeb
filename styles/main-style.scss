@@ -1,0 +1,280 @@
+.d-flex {
+  display: flex;
+}
+a:focus, button:focus {
+  outline: none;
+}
+body {
+  margin-top: 90px;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.main-page {
+
+}
+
+.pad-66 {
+  padding: 0 50px;
+}
+
+.easy_text {
+
+}
+
+ul {
+  list-style: none;
+  display: block;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+ul li::before {
+  content: "";
+  background-image: url("../public/images/Ellipse.svg");
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  top: 0.3rem;
+  margin-right: 0.2rem;
+  left: -30px;
+}
+
+ol {
+  list-style: none;
+  counter-reset: steps;
+  padding-left: 0;
+}
+
+ol li {
+  counter-increment: steps;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+ol li::before {
+  content: counter(steps) ".";
+
+  margin-right: 0.5rem;
+  background: none;
+  width: 2.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 160%;
+  color: #00A4F7;
+}
+
+ol li {
+  display: flex;
+}
+
+ol ol li::before {
+
+}
+
+blockquote {
+  padding-left: 40px;
+  margin-left: 10px;
+  border-left: 3px solid #00A4F7;
+
+  p {
+    padding: 10px 0;
+  }
+}
+
+
+
+thead tr th:nth-child(1) {
+  padding-bottom: 10px;
+  flex: 1;
+}
+
+thead tr th:nth-child(2) {
+  padding-bottom: 10px;
+  flex: 2;
+}
+
+thead tr th:nth-child(3) {
+  padding-bottom: 10px;
+  flex: 1;
+}
+
+
+tbody tr td:nth-child(1) {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  flex: 1;
+}
+
+tbody tr td:nth-child(2) {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  flex: 2;
+}
+
+tbody tr td:nth-child(3) {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  flex: 1;
+}
+
+tbody tr {
+  display: flex;
+  border-bottom: 2px solid #DADADA;
+}
+
+
+tbody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+thead tr {
+  border-bottom: 2px solid #00A4F7;
+  width: 100%;
+  display: flex;
+}
+
+.styles_gallery {
+  width: 100%;
+  overflow: auto;
+}
+
+.style_gallery_img {
+  height: 130px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.create_text_block {
+  margin: 0 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.create_text_block:last-child {
+  position: relative;
+}
+
+.style_gallery_text {
+  display: none;
+}
+
+.create_text_block:last-child .style_gallery_text {
+  position: absolute;
+  width: 100%;
+  padding: 0 15px;
+  height: 100%;
+  color: #FFFFFF;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5));
+  top: 0;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.form_container {
+  margin-top: 150px;
+  position: relative;
+  background: #FAF9FA;
+  min-height: 700px;
+  padding: 50px;
+  padding-bottom: 0;
+}
+.image_man {
+  position: absolute;
+  top: -73px;
+  left: 0px;
+}
+
+.wrapper_form_margin {
+  padding-left: 222px;
+}
+.hr {
+  border-bottom: 1px solid #ADADAD;
+  width: 100%;
+  margin-top: 50px;
+}
+
+@media (max-width: 1024px) {
+  .pad-66 {
+    padding: 0 20px;
+  }
+  .wrapper_form_margin {
+    padding: 0;
+  }
+  .image_man {
+    position: relative;
+    top: -73px;
+    left: 0px;
+    height: 300px;
+  }
+
+}
+@media (max-width: 992px) {
+  .image_man {
+    position: relative;
+    top: -73px;
+    left: 0px;
+    margin-left: -20px;
+    height: 200px;
+    text-align: center;
+  }
+  .wrapper_form_margin {
+    padding-left: 0px;
+  }
+  table {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    overflow: scroll;
+    max-width: 100%;
+  }
+  table thead {
+    width: 700px;
+  }
+  table tbody {
+    width: 700px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  ol li:before {
+    content: counter(steps) ".";
+    margin-right: 0.5rem;
+    background: none;
+    width: 20px;
+    height: 1.2em;
+    border-radius: 50%;
+    display: flex;
+    place-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 160%;
+    color: #00A4F7;
+  }
+  ol {
+    margin-left: 10px;
+  }
+  .pad-66 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+}
