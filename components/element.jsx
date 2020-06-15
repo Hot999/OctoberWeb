@@ -144,6 +144,7 @@ export const LinkTo = props => {
 };
 
 export const NavigationLink = (props) => {
+
     return (
         <>
             <a href={props.href}>
@@ -157,8 +158,10 @@ export const NavigationLink = (props) => {
                 font-weight: bold;
                 font-size: 18px;
                 color: #128ACE;
+                padding: 5px;
             }
             a:hover {
+                text-decoration: none;
                 color: #00A4F7;
                 cursor: pointer;
             }
@@ -433,6 +436,7 @@ export const CopyLinkWrapper = props => {
                         cursor: pointer;
                         position: relative;
                         display: flex;
+                        height: 44px;
                         }
                         .wrapper_copy_link {
                             display: block

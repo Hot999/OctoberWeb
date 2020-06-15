@@ -119,9 +119,9 @@ export const FormHi = () => (
                                            type="checkbox"
                                            validate={validateCheckbox}/>
                                     <div className={style.checkbox_box} />
-                                    {errors.checkbox && touched.checkbox && <div className={style.mobile_error}>{errors.checkbox}</div>}
                                     <div className={style.accept}>Согласен с правилами обработки моих персональных данных</div>
                                 </div>
+                                {errors.checkbox && touched.checkbox && <div className={style.mobile_error}>{errors.checkbox}</div>}
                                 <div className={style.text}>Форма отправляется только, если отметка с согласием стоит</div>
                             </div>
                             {errors.checkbox && touched.checkbox && <div className={style.desktop_error}>{errors.checkbox}</div>}

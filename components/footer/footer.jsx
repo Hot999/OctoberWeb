@@ -37,10 +37,11 @@ export const Footer = () => {
                                 <NavigationLink href="#text-block">Текстовые блоки</NavigationLink>
                                 <NavigationLink href="#gallery">Галерея</NavigationLink>
                                 <NavigationLink href="#form">Форма</NavigationLink>
+                                <span className={"d-block d-md-none " + style.text_copy}>© 2009-2020 OctoberWeb</span>
                             </div>
                     </div>
-                    <div className="col-lg-8 col-12">
-                        <div className="text-lg-right text-left">
+                    <div className="col-lg-8 col-12 align-items-center">
+                        <div className="text-lg-right text-left d-none d-md-block">
                             © 2009-2020 OctoberWeb
                         </div>
                     </div>

@@ -17,6 +17,8 @@ export default function Home(props) {
     const [openedModal, setModal] = useState(false);
     const [srcToModal, setSRC] = useState(null);
 
+
+
     const check = (src) => {
         setModal(true)
         setSRC(src)
@@ -62,18 +64,30 @@ export default function Home(props) {
                     </div>
 
                     <div className="row mt-5">
-                        <div className="col-lg-6 col-12">
+                        <div className="col-12">
                             <LargeText>текстовые блоки и изображения для галереи</LargeText>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-6 col-12">
                             <CopyLinkWrapper>https://test.octweb.ru/api/pages/index/</CopyLinkWrapper>
+                        </div>
+                        <div className="col-lg-6 col-12 align-self-lg-end">
+                            <div className="d-flex">
+                                Будет круто, если по клику на желтый блок, соответствующая ссылка сразу скопируется в
+                                буфер обмена и пользователь получит какое-то максимально естественное уведомление что у
+                                него теперь в буфере эта ссылка.
+                            </div>
+
                         </div>
                     </div>
                 </div>
 
-                <div className="container-fluid pad-66 mt-5">
+                <div className="container-fluid pad-66 mt-5" id="text-block">
                     {StaticBlock}
                 </div>
 
-                <div className="container-fluid pad-66 mt-5">
+                <div className="container-fluid pad-66 mt-5" id="gallery">
                     <div className="row">
                         <div className="col-lg-9 col-12">
                             <TitleH2>Галерея с изображениями</TitleH2>
@@ -106,20 +120,19 @@ export default function Home(props) {
 
                 </div>
 
-                <div className="container-fluid pad-66 form_container">
+                <div className="container-fluid pad-66 form_container" id="form">
                     <div className="image_man"><img src="/images/bigman.svg" alt=""/></div>
                     <div className="col-lg-12 col-12 wrapper_form_margin">
                         <FormHi/>
                     </div>
-
-
                     <div className="hr"/>
                 </div>
 
 
             </div>
 
-            {openedModal ? <PopupImg src={srcToModal} /> : null}
+            {openedModal ? <PopupImg src={srcToModal}/> : null}
+
         </Context.Provider>
     )
 }

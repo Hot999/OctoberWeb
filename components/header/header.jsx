@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./header.module.scss"
+import {NavigationLink} from "../element";
 
 
 export default function Header(props) {
@@ -13,17 +14,13 @@ export default function Header(props) {
                     </div>
                     <div className={"col-6  " + styles.mobile_header}>
                         <div className={styles.ul}>
-                            <a>
-                                Тестовые блоки
-                            </a>
-                            <a>
-                                Галерея
-                            </a>
+                            <NavigationLink href="#text-block">Текстовые блоки</NavigationLink>
+                            <NavigationLink href="#gallery">Галерея</NavigationLink>
                         </div>
                     </div>
                     <div className={"col-4  " + styles.mobile_header}>
                         <div className={styles.link_to_form + " text-center"}>
-                            👋 Форма с приветами
+                            <NavigationLink href="#form">👋 Форма с приветами</NavigationLink>
                         </div>
                     </div>
                 </div>

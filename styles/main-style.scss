@@ -5,7 +5,7 @@ a:focus, button:focus {
   outline: none;
 }
 body {
-  margin-top: 90px;
+  //margin-top: 90px;
   font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -59,10 +59,9 @@ ol li {
 
 ol li::before {
   content: counter(steps) ".";
-
-  margin-right: 0.5rem;
+  margin-right: 0;
   background: none;
-  width: 2.2em;
+  width: 40px;
   height: 1.2em;
   border-radius: 50%;
   display: inline-grid;
@@ -78,9 +77,7 @@ ol li {
   display: flex;
 }
 
-ol ol li::before {
 
-}
 
 blockquote {
   padding-left: 40px;
